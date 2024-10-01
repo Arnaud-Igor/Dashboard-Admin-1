@@ -128,7 +128,7 @@ function ProductTable() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex justify-between items-center mb-6 overflow">
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 sm:justify-between sm:items-center mb-6">
         <h2 className="text-xl font-semibold text-gray-100">Products List</h2>
         <div className="relative">
           <input
@@ -136,7 +136,7 @@ function ProductTable() {
             onChange={handleSearch}
             type="text"
             placeholder="Search products..."
-            className="bg-gray-700 text-gray-100 rounded-lg placeholder-gray-400 pl-10 pr-4 py-2 max-w-72 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-50"
+            className="bg-gray-700 text-gray-100 rounded-lg placeholder-gray-400 pl-10 pr-4 py-2 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-50"
           />
           <Search
             size={20}
@@ -177,6 +177,7 @@ function ProductTable() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
+                className="hover:bg-gray-700"
               >
                 <td className="py-4 px-6 flex gap-2 items-center whitespace-nowrap text-sm font-medium text-gray-100">
                   <img
