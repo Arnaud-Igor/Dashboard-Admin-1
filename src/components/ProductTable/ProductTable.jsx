@@ -51,7 +51,7 @@ const PRODUCT_DATA = [
     stock: 30,
     sales: 15,
     imageUrl:
-      "https://img.freepik.com/free-photo/man-wearing-hoodie-with-hoodie-it_188544-40017.jpg?t=st=1727806241~exp=1727809841~hmac=69f414cc9f9a1a9a1f7ee75b25dbad1c0dfd0e8160706ee2e9d68244f93887fc&w=1800",
+      "https://img.freepik.com/free-photo/object-male-elegance-imagery-background_1172-332.jpg?t=st=1727819882~exp=1727823482~hmac=5b67e2bf5ff849627507cb5b02dd38833d19b5a9572d45fab414db7444e04f9e&w=1480",
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const PRODUCT_DATA = [
     stock: 20,
     sales: 10,
     imageUrl:
-      "https://img.freepik.com/free-photo/man-wearing-hoodie-with-hoodie-it_188544-40017.jpg?t=st=1727806241~exp=1727809841~hmac=69f414cc9f9a1a9a1f7ee75b25dbad1c0dfd0e8160706ee2e9d68244f93887fc&w=1800",
+      "https://img.freepik.com/free-photo/new-pair-white-sneakers-isolated-white_93675-135053.jpg?t=st=1727819944~exp=1727823544~hmac=01e745c0fcc8377dfa41817e63e9543c562a404a201a59282447e5080c27fe64&w=1480",
   },
   {
     id: 7,
@@ -71,7 +71,7 @@ const PRODUCT_DATA = [
     stock: 10,
     sales: 5,
     imageUrl:
-      "https://img.freepik.com/free-photo/man-wearing-hoodie-with-hoodie-it_188544-40017.jpg?t=st=1727806241~exp=1727809841~hmac=69f414cc9f9a1a9a1f7ee75b25dbad1c0dfd0e8160706ee2e9d68244f93887fc&w=1800",
+      "https://img.freepik.com/free-photo/leather-boots_1203-7406.jpg?t=st=1727819993~exp=1727823593~hmac=bcbede6383a076069474d7c3276b4ee46878b0a9a1c3cc0febf9053a0b0c2be6&w=1480",
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const PRODUCT_DATA = [
     stock: 100,
     sales: 50,
     imageUrl:
-      "https://img.freepik.com/free-photo/man-wearing-hoodie-with-hoodie-it_188544-40017.jpg?t=st=1727806241~exp=1727809841~hmac=69f414cc9f9a1a9a1f7ee75b25dbad1c0dfd0e8160706ee2e9d68244f93887fc&w=1800",
+      "https://img.freepik.com/free-photo/socks-isolated_1203-6960.jpg?t=st=1727820062~exp=1727823662~hmac=63806ae95e510fd11da027c67adec48a7ea1ac69f901351dd9e960e06d4d8a93&w=1480",
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ const PRODUCT_DATA = [
     stock: 50,
     sales: 25,
     imageUrl:
-      "https://img.freepik.com/free-photo/man-wearing-hoodie-with-hoodie-it_188544-40017.jpg?t=st=1727806241~exp=1727809841~hmac=69f414cc9f9a1a9a1f7ee75b25dbad1c0dfd0e8160706ee2e9d68244f93887fc&w=1800",
+      "https://img.freepik.com/free-photo/pair-gloves-boxing-sport_23-2150367634.jpg?t=st=1727820139~exp=1727823739~hmac=0b143ba6ee286be28107df75cbdd8d4623f1dc8f1afa554cc88eaf659e1c30e6&w=740",
   },
   {
     id: 10,
@@ -101,7 +101,7 @@ const PRODUCT_DATA = [
     stock: 75,
     sales: 10,
     imageUrl:
-      "https://img.freepik.com/free-photo/man-wearing-hoodie-with-hoodie-it_188544-40017.jpg?t=st=1727806241~exp=1727809841~hmac=69f414cc9f9a1a9a1f7ee75b25dbad1c0dfd0e8160706ee2e9d68244f93887fc&w=1800",
+      "https://img.freepik.com/free-photo/red-winter-scarf-isolated-against-white-background_1101-2380.jpg?t=st=1727820180~exp=1727823780~hmac=0199a4a31694b76b9c1adf49197a43ab5897db5ac3efdd15b61c04ad6886797a&w=740",
   },
 ];
 
@@ -128,7 +128,7 @@ function ProductTable() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 sm:justify-between sm:items-center mb-6">
+      <div className="flex flex-col w-full sm:flex-row gap-6 sm:gap-0 sm:justify-between sm:items-center mb-6">
         <h2 className="text-xl font-semibold text-gray-100">Products List</h2>
         <div className="relative">
           <input
@@ -183,7 +183,7 @@ function ProductTable() {
                   <img
                     src={product.imageUrl}
                     alt={product.name}
-                    className="size-10 rounded-full"
+                    className="size-10 rounded-full object-cover"
                   />
                   {product.name}
                 </td>
