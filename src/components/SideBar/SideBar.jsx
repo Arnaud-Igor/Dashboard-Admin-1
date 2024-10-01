@@ -57,7 +57,7 @@ const SideBarItems = [
 ];
 
 function SideBar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleSideBar = () => setIsOpen(!isOpen);
 
   return (
