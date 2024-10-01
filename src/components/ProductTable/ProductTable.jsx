@@ -128,15 +128,15 @@ function ProductTable() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex flex-col w-full sm:flex-row gap-6 sm:gap-0 sm:justify-between sm:items-center mb-6">
-        <h2 className="text-xl font-semibold text-gray-100">Products List</h2>
+      <div className="flex flex-col w-full sm:flex-row gap-6 sm:gap-0 justify-between sm:items-center mb-6">
+        <h2 className="text-xl font-semibold text-gray-100 bg-blue-300">Products List</h2>
         <div className="relative">
           <input
             value={searchTerm}
             onChange={handleSearch}
             type="text"
             placeholder="Search products..."
-            className="bg-gray-700 text-gray-100 rounded-lg placeholder-gray-400 pl-10 pr-4 py-2 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-50"
+            className="bg-gray-700 text-gray-100 rounded-lg placeholder-gray-400 pl-10 pr-4 py-2 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-50 w-full"
           />
           <Search
             size={20}
