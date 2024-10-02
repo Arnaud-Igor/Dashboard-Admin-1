@@ -209,10 +209,10 @@ function ProductTable() {
                 </td>
                 <td className="py-4 px-6 whitespace-nowrap">
                   <div className="flex items-center space-x-4">
-                    <button className="text-gray-400 hover:text-gray-100">
+                    <button className="text-[#6366f1] hover:text-gray-100">
                       <Edit size={16} />
                     </button>
-                    <button className="text-gray-400 hover:text-gray-100">
+                    <button className="text-[#ec4899] hover:text-gray-100">
                       <Trash2 size={16} />
                     </button>
                   </div>

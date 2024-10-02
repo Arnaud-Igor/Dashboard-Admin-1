@@ -9,33 +9,33 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const salesData = [
-  { name: "Jan", sales: 4000 },
-  { name: "Feb", sales: 3000 },
-  { name: "Mar", sales: 2000 },
-  { name: "Apr", sales: 2780 },
-  { name: "May", sales: 1890 },
-  { name: "Jun", sales: 2390 },
-  { name: "Jul", sales: 3490 },
-  { name: "Aug", sales: 4000 },
-  { name: "Sep", sales: 3000 },
-  { name: "Oct", sales: 2000 },
-  { name: "Nov", sales: 2780 },
-  { name: "Dec", sales: 1890 },
+const usersData = [
+  { name: "Jan", users: 500 },
+  { name: "Feb", users: 700 },
+  { name: "Mar", users: 900 },
+  { name: "Apr", users: 1280 },
+  { name: "May", users: 2890 },
+  { name: "Jun", users: 3390 },
+  { name: "Jul", users: 4490 },
+  { name: "Aug", users: 5060 },
+  { name: "Sep", users: 5208 },
+  { name: "Oct", users: 6010 },
+  { name: "Nov", users: 7080 },
+  { name: "Dec", users: 8890 },
 ];
 
-function SalesTrendChart() {
+function UserGrowthChart() {
   return (
     <motion.div
       className="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.4 }}
     >
-      <h2 className="text-lg font-semibold text-gray-100 mb-4">Sales Trend</h2>
+      <h2 className="text-lg font-semibold text-gray-100 mb-4">User Growth</h2>
       <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={salesData}>
+          <LineChart data={usersData}>
             <XAxis dataKey="name" stroke="#A0AEC0" />
             <YAxis stroke="#A0AEC0" />
             <CartesianGrid strokeDasharray="2 2" stroke="#4B5563" />
@@ -49,7 +49,7 @@ function SalesTrendChart() {
             />
             <Line
               type="monotone"
-              dataKey="sales"
+              dataKey="users"
               stroke="#6366f1"
               strokeWidth={3}
               dot={{ fill: "#10B981", r: 4, strokeWidth: 3 }}
@@ -62,4 +62,4 @@ function SalesTrendChart() {
   );
 }
 
-export default SalesTrendChart;
+export default UserGrowthChart;
