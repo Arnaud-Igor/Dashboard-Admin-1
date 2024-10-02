@@ -102,12 +102,12 @@ function UserActivityHeatmap() {
               itemStyle={{ color: "#D1D5DB" }}
             />
             <Legend />
-            <Bar dataKey="0-4" fill="#6366f1" />
-            <Bar dataKey="4-8" fill="#8b5cf6" />
-            <Bar dataKey="8-12" fill="#ec4899" />
-            <Bar dataKey="12-16" fill="#f59e0b" />
-            <Bar dataKey="16-20" fill="#10b981" />
-            <Bar dataKey="20-24" fill="#6366f1" />
+            <Bar dataKey="0-4" stackId={"a"} fill="#6366f1" />
+            <Bar dataKey="4-8" stackId={"a"} fill="#8b5cf6" />
+            <Bar dataKey="8-12" stackId={"a"} fill="#ec4899" />
+            <Bar dataKey="12-16" stackId={"a"} fill="#f59e0b" />
+            <Bar dataKey="16-20" stackId={"a"} fill="#10b981" />
+            <Bar dataKey="20-24" stackId={"a"} fill="#6366f1" />
           </BarChart>
         </ResponsiveContainer>
       </div>

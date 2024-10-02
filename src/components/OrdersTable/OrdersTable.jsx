@@ -120,7 +120,7 @@ function OrdersTable() {
       (order) =>
         order.OrderID.toLowerCase().includes(term) ||
         order.Customer.toLowerCase().includes(term) ||
-        order.Date.toLowerCase().includes(term)
+        order.Status.toLowerCase().includes(term)
     );
 
     setFilteredOrders(filtered);
@@ -128,13 +128,13 @@ function OrdersTable() {
 
   return (
     <motion.div
-      clOrderID="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700 mb-8"
+      className="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700 mt-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
       <div className="flex flex-col w-full sm:flex-row gap-6 sm:gap-0 justify-between sm:items-center mb-6">
-        <h2 className="text-xl font-semibold text-gray-100">Order List</h2>
+        <h2 className="text-xl font-semibold text-gray-100">Orders List</h2>
         <div className="relative">
           <input
             value={searchTerm}
@@ -205,8 +205,8 @@ function OrdersTable() {
                     <div
                       className={`absolute top-1/2 -right-6 lg:right-0 transform -translate-y-1/2 size-2 rounded-full ${
                         order.Status === "Completed"
-                          ? "bg-green-500"
-                          : "bg-yellow-500"
+                          ? "bg-green-500 "
+                          : "bg-yellow-500 animate-ping"
                       } `}
                     ></div>
                   </div>

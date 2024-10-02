@@ -3,6 +3,8 @@ import Header from "../../components/Header/Header";
 import StatCard from "../../components/StatCard/StatCard";
 import { CircleCheckBig, Clock, DollarSign, ShoppingBag } from "lucide-react";
 import OrdersTable from "../../components/OrdersTable/OrdersTable";
+import DailyOrderChart from "../../components/DailyOrderChart/DailyOrderChart";
+import OrderStatusDistribution from "../../components/OrderStatusDistribution/OrderStatusDistribution";
 
 function OrdersPage() {
   return (
@@ -42,7 +44,10 @@ function OrdersPage() {
           />
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2"></div>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <DailyOrderChart />
+          <OrderStatusDistribution />
+        </div>
 
         <OrdersTable />
       </main>

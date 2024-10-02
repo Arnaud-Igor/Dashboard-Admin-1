@@ -17,7 +17,7 @@ const USER_DATA = [
     name: "Jane Doe",
     email: "janedoe@gmail.com",
     role: "Customer",
-    status: "Inactive",
+    status: "Active",
     imageUrl:
       "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100205.jpg?t=st=1727875590~exp=1727879190~hmac=dee5ad5a11dddcc32c9db9a9e2314c3a21efacd85f5df94daf41a93e885684cf&w=1060",
   },
@@ -162,7 +162,7 @@ function UsersTable() {
                     {user.status}
                     <div
                       className={`absolute top-1/2 -right-6 lg:right-0 transform -translate-y-1/2 size-2 rounded-full ${
-                        user.status === "Active" ? "bg-green-500" : "bg-red-500"
+                        user.status === "Active" ? "bg-green-500 animate-ping" : "bg-red-500"
                       } `}
                     ></div>
                   </div>
