@@ -161,7 +161,7 @@ function UsersTable() {
                   <div className="text-sm font-medium text-gray-100 relative">
                     {user.status}
                     <div
-                      className={`absolute top-1/2 right-8 transform -translate-y-1/2 size-2 rounded-full ${
+                      className={`absolute top-1/2 -right-6 lg:right-0 transform -translate-y-1/2 size-2 rounded-full ${
                         user.status === "Active" ? "bg-green-500" : "bg-red-500"
                       } `}
                     ></div>
